@@ -24,7 +24,6 @@ class Song
     song_name = filename.split(" - ").to_a[1]
     artist = filename.split(" - ").to_a[0]
     Song.new(song_name)
-    Artist.add_song(song_name)
     song.artist_name=artist_name
     song
   end
