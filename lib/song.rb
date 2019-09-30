@@ -29,9 +29,9 @@ class Song
 #still not passing
   def self.new_by_filename(filename)
     # artist_name= Artist.find_or_create_by_name(filename.split(" - ").to_a[0])
-    song_name = filename.split(" - ").to_a[1]
+    name = filename.split(" - ").to_a[1]
     artist = filename.split(" - ").to_a[0]
-    Song.new(song_name)
+    Song.new(name)
     # Artist.add_song(song_name)
   end
 
